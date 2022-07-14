@@ -1,0 +1,64 @@
+{
+  "name": "gdsmain",
+  "version": "1.0.0",
+  "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "author": "Rex Kenley Tan",
+  "main": "main.tsx",
+  "scripts": {
+
+    "storybook": "start-storybook --no-manager-cache -p 6006",
+
+    "build-storybook": "build-storybook",
+
+    "test": "jest",
+    
+    "build": "tsc",
+
+    "buildString": "pcf-scripts --customPath='string' build",
+    "buildDate": "pcf-scripts --customPath='date' build",
+    "buildOption": "pcf-scripts --customPath='option' build",
+
+    "refreshTypesString": "pcf-scripts --customPath='string' refreshTypes",
+    "refreshTypesDate": "pcf-scripts --customPath='date' refreshTypes",
+    "refreshTypesOption": "pcf-scripts --customPath='option' refreshTypes",
+
+    "startString": "pcf-scripts --customPath='string' start",
+    "startDate": "pcf-scripts --customPath='date' start",     
+    "startOption": "pcf-scripts --customPath='option' start",
+
+    "toDataverse":"@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./toDataverse.ps1"
+
+   },
+  "dependencies": {
+    "@types/react": "^18.0.15",
+    "@types/styled-components": "^5.1.25",
+    "govuk-react": "^0.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.6",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-controls": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@types/jest": "^28.1.5",
+    "@types/node": "^16.4",
+    "@types/powerapps-component-framework": "^1.3.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-plugin-storybook": "^0.6.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.3",
+    "pcf-project": "^1.0.1",
+    "pcf-scripts": "^1.16.6",
+    "pcf-start": "^1.16.6",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
