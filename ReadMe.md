@@ -1,5 +1,7 @@
-# React PCF GDS Components 
-*** Run all NPM install, Story Book and Build / Publish Commands from this directories package.json ***
+# THIS IS COMPLETELY OUT OF DATE AND THE SETUP HERE IS TRASH
+The structure of this is pretty terrible, it's massively out of date with modern PCF and React Libraries.
+
+Some of the code for how I'm displaying these for GDS purposes might be handy as a point of reference but don't actually try and use this project.
 
 ## Purpose
 The aim is to provide components from the GDS front end system as React components that can be served on a Microsoft Portal. As many of the themes and patterns are common this project aims to share components and functions where it's logical. Currently the react components themselves have been installed from a 3rd party library : https://github.com/govuk-react . It's not perfect and writing them manually might be better.
